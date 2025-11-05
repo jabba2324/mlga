@@ -6,17 +6,17 @@ A Chrome extension that provides advanced filtering and customization options fo
 
 ### Content Filtering
 - **Hide Feed**: Hide the entire main feed
-- **Hide Sponsored**: Remove sponsored content and advertisements
-- **Hide Job Posts**: Filter out job posting cards
-- **Hide Activity Posts**: Remove activity updates
+- **Hide Sponsored**: Remove sponsored content and advertisements (enabled by default)
+- **Hide Recommendations**: Filter out job recommendations and suggested content
+- **Hide Non Job Posts**: Remove activity updates and non-job related posts (enabled by default)
 - **Hide Games**: Remove LinkedIn games and game-related content
 - **Text Only Posts**: Hide images, videos, and documents to show only text content
 
 ### Chill Mode
-Apply grayscale filter to all images and SVGs with hover effects to restore color. Creates a less distracting browsing experience.
+Apply grayscale filter to all images and SVGs with hover effects to restore color. Creates a less distracting, more focused browsing experience.
 
 ### Keyword Highlighting
-Highlight specific keywords in the feed with custom colors and 40% opacity for better visibility.
+Highlight specific keywords in the feed with custom colors for better visibility. Add multiple keywords with different colors to track topics that matter to you.
 
 ## Installation
 
