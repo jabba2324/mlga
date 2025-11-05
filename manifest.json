@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Make Linked In great again",
+  "version": "1.0",
+  "description": "A chrome extension that provied some additional filters for the main feed",
+  "permissions": ["activeTab", "storage", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Make Linked In great again",
+    "default_icon": {
+      "16": "icon.svg",
+      "32": "icon.svg",
+      "48": "icon.svg",
+      "128": "icon.svg"
+    }
+  },
+  "icons": {
+    "16": "icon.svg",
+    "48": "icon.svg",
+    "128": "icon.svg"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.linkedin.com/*"],
+      "js": ["content-filters.js", "text-manipulators.js", "chill-mode.js"],
+      "all_frames": true
+    }
+  ]
+}

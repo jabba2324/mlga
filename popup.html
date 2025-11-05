@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 200px; padding: 10px; }
+    button { width: 100%; padding: 8px; margin: 5px 0; }
+    .keyword-form { display: flex; align-items: center; margin: 2px 0; }
+    .keyword-input { flex: 1; margin-right: 5px; }
+    .color-picker { margin-right: 5px; }
+    .remove-keyword { width: 20px; height: 20px; padding: 0; margin: 0; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <h3>Make LinkedIn Great Again</h3>
+  <label>
+    <input type="checkbox" id="toggleFeed">
+    Hide Feed
+  </label>
+  <br>
+  <label>
+    <input type="checkbox" id="toggleSponsored" checked>
+    Hide Sponsored
+  </label>
+  <br>
+  <label>
+    <input type="checkbox" id="toggleJobs">
+    Hide Reccomendations
+  </label>
+  <br>
+  <label>
+    <input type="checkbox" id="toggleActivity" checked>
+    Hide Non Job Posts
+  </label>
+  <br>
+  <label>
+    <input type="checkbox" id="toggleGames">
+    Hide Games
+  </label>
+  <br>
+  <label>
+    <input type="checkbox" id="toggleTextOnly">
+    Text Only Posts
+  </label>
+  
+  <hr>
+  <label>
+    <input type="checkbox" id="toggleChillMode">
+    Chill Mode (Greyscale Images)
+  </label>
+  
+  <hr>
+  <h4>Keyword Highlighting</h4>
+  <div id="keywordForms">
+    <div class="keyword-form">
+      <input type="text" placeholder="Enter keyword" class="keyword-input">
+      <input type="color" value="#ffff00" class="color-picker">
+      <button type="button" class="remove-keyword">X</button>
+    </div>
+  </div>
+  <button id="addKeyword">Add More Keywords</button>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
