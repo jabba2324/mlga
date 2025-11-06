@@ -16,7 +16,7 @@ function applyFilters() {
   }
   
   if (settings.hideSponsored) {
-    css += 'div:has(> [componentkey*="_expandedurn:li:sponsoredContent"]) { display: none !important; }';
+    css += 'div:has(> [componentkey*="sponsoredContent"]) { display: none !important; }';
     css += '.ad-banner, .ad-banner-container, [title="advertisement"] { display: none !important; }';
   }
   
@@ -26,8 +26,8 @@ function applyFilters() {
   }
   
   if (settings.hideActivity) {
-    css += 'div:has(> [componentkey*="_expandedurn:li:activity:"]) { display: none !important; }';
-    css += 'div:has(> [componentkey*="_expandedurn:li:activity:"]):has(a[href*="job"]) { display: block !important; }';
+    css += 'div:has(> [componentkey*="activity:"]) { display: none !important; }';
+    css += 'div:has(> [componentkey*="activity:"]):has(a[href*="job"]) { display: block !important; }';
   }
   
   if (settings.hideGames) {
